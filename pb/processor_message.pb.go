@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.26.0
 // 	protoc        v3.17.1
-// source: message_processor.proto
+// source: processor_message.proto
 
 package pb
 
@@ -36,7 +36,7 @@ type CPU struct {
 func (x *CPU) Reset() {
 	*x = CPU{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_message_processor_proto_msgTypes[0]
+		mi := &file_processor_message_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -49,7 +49,7 @@ func (x *CPU) String() string {
 func (*CPU) ProtoMessage() {}
 
 func (x *CPU) ProtoReflect() protoreflect.Message {
-	mi := &file_message_processor_proto_msgTypes[0]
+	mi := &file_processor_message_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -62,7 +62,7 @@ func (x *CPU) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use CPU.ProtoReflect.Descriptor instead.
 func (*CPU) Descriptor() ([]byte, []int) {
-	return file_message_processor_proto_rawDescGZIP(), []int{0}
+	return file_processor_message_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *CPU) GetBrand() string {
@@ -122,7 +122,7 @@ type GPU struct {
 func (x *GPU) Reset() {
 	*x = GPU{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_message_processor_proto_msgTypes[1]
+		mi := &file_processor_message_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -135,7 +135,7 @@ func (x *GPU) String() string {
 func (*GPU) ProtoMessage() {}
 
 func (x *GPU) ProtoReflect() protoreflect.Message {
-	mi := &file_message_processor_proto_msgTypes[1]
+	mi := &file_processor_message_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -148,7 +148,7 @@ func (x *GPU) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GPU.ProtoReflect.Descriptor instead.
 func (*GPU) Descriptor() ([]byte, []int) {
-	return file_message_processor_proto_rawDescGZIP(), []int{1}
+	return file_processor_message_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *GPU) GetBrand() string {
@@ -186,11 +186,11 @@ func (x *GPU) GetMemory() *Memory {
 	return nil
 }
 
-var File_message_processor_proto protoreflect.FileDescriptor
+var File_processor_message_proto protoreflect.FileDescriptor
 
-var file_message_processor_proto_rawDesc = []byte{
-	0x0a, 0x17, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x5f, 0x70, 0x72, 0x6f, 0x63, 0x65, 0x73,
-	0x73, 0x6f, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x11, 0x74, 0x65, 0x63, 0x68, 0x73,
+var file_processor_message_proto_rawDesc = []byte{
+	0x0a, 0x17, 0x70, 0x72, 0x6f, 0x63, 0x65, 0x73, 0x73, 0x6f, 0x72, 0x5f, 0x6d, 0x65, 0x73, 0x73,
+	0x61, 0x67, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x11, 0x74, 0x65, 0x63, 0x68, 0x73,
 	0x63, 0x68, 0x6f, 0x6f, 0x6c, 0x2e, 0x70, 0x63, 0x62, 0x6f, 0x6f, 0x6b, 0x1a, 0x14, 0x6d, 0x65,
 	0x6d, 0x6f, 0x72, 0x79, 0x5f, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x2e, 0x70, 0x72, 0x6f,
 	0x74, 0x6f, 0x22, 0xab, 0x01, 0x0a, 0x03, 0x43, 0x50, 0x55, 0x12, 0x14, 0x0a, 0x05, 0x62, 0x72,
@@ -218,24 +218,24 @@ var file_message_processor_proto_rawDesc = []byte{
 }
 
 var (
-	file_message_processor_proto_rawDescOnce sync.Once
-	file_message_processor_proto_rawDescData = file_message_processor_proto_rawDesc
+	file_processor_message_proto_rawDescOnce sync.Once
+	file_processor_message_proto_rawDescData = file_processor_message_proto_rawDesc
 )
 
-func file_message_processor_proto_rawDescGZIP() []byte {
-	file_message_processor_proto_rawDescOnce.Do(func() {
-		file_message_processor_proto_rawDescData = protoimpl.X.CompressGZIP(file_message_processor_proto_rawDescData)
+func file_processor_message_proto_rawDescGZIP() []byte {
+	file_processor_message_proto_rawDescOnce.Do(func() {
+		file_processor_message_proto_rawDescData = protoimpl.X.CompressGZIP(file_processor_message_proto_rawDescData)
 	})
-	return file_message_processor_proto_rawDescData
+	return file_processor_message_proto_rawDescData
 }
 
-var file_message_processor_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_message_processor_proto_goTypes = []interface{}{
+var file_processor_message_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_processor_message_proto_goTypes = []interface{}{
 	(*CPU)(nil),    // 0: techschool.pcbook.CPU
 	(*GPU)(nil),    // 1: techschool.pcbook.GPU
 	(*Memory)(nil), // 2: techschool.pcbook.Memory
 }
-var file_message_processor_proto_depIdxs = []int32{
+var file_processor_message_proto_depIdxs = []int32{
 	2, // 0: techschool.pcbook.GPU.memory:type_name -> techschool.pcbook.Memory
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
@@ -244,14 +244,14 @@ var file_message_processor_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_message_processor_proto_init() }
-func file_message_processor_proto_init() {
-	if File_message_processor_proto != nil {
+func init() { file_processor_message_proto_init() }
+func file_processor_message_proto_init() {
+	if File_processor_message_proto != nil {
 		return
 	}
 	file_memory_message_proto_init()
 	if !protoimpl.UnsafeEnabled {
-		file_message_processor_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_processor_message_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*CPU); i {
 			case 0:
 				return &v.state
@@ -263,7 +263,7 @@ func file_message_processor_proto_init() {
 				return nil
 			}
 		}
-		file_message_processor_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+		file_processor_message_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*GPU); i {
 			case 0:
 				return &v.state
@@ -280,18 +280,18 @@ func file_message_processor_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_message_processor_proto_rawDesc,
+			RawDescriptor: file_processor_message_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_message_processor_proto_goTypes,
-		DependencyIndexes: file_message_processor_proto_depIdxs,
-		MessageInfos:      file_message_processor_proto_msgTypes,
+		GoTypes:           file_processor_message_proto_goTypes,
+		DependencyIndexes: file_processor_message_proto_depIdxs,
+		MessageInfos:      file_processor_message_proto_msgTypes,
 	}.Build()
-	File_message_processor_proto = out.File
-	file_message_processor_proto_rawDesc = nil
-	file_message_processor_proto_goTypes = nil
-	file_message_processor_proto_depIdxs = nil
+	File_processor_message_proto = out.File
+	file_processor_message_proto_rawDesc = nil
+	file_processor_message_proto_goTypes = nil
+	file_processor_message_proto_depIdxs = nil
 }
